@@ -40,9 +40,9 @@ int ndpi_predict_linear(u_int32_t *values, u_int32_t num_values, u_int32_t predi
 	if(!values || predict_period < 1 || num_values < 2)
 		return -1;
 
-	ndpi_init_data_analysis(&a, 3);
-	ndpi_init_data_analysis(&b, 3);
-	ndpi_init_data_analysis(&d, 3);
+	ndpi_init_data_analysis(&a, 0);
+	ndpi_init_data_analysis(&b, 0);
+	ndpi_init_data_analysis(&d, 0);
   
 	/* Add values */
 	for(i=0; i<num_values; i++){
@@ -62,7 +62,7 @@ int ndpi_predict_linear(u_int32_t *values, u_int32_t num_values, u_int32_t predi
 		ndpi_free_data_analysis(&a, 0);
 		ndpi_free_data_analysis(&b, 0);
 		ndpi_free_data_analysis(&d, 0);
-    	return -1;
+    		return -1;
 	}
   
 	r          = covariance / (stddevX * stddevY);
