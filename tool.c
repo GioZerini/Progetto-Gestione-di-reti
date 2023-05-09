@@ -174,8 +174,15 @@ int ndpi_predict_linear(u_int32_t *values, u_int32_t num_values, u_int32_t predi
 void testTool() {
 	int i;
   FILE *fp;
-  char memTotal[15], memFree[15], buffers[15], cached[15];
-  u_int32_t mem[10];
+  char *memTotal, *memFree, *buffers, *cached;
+  u_int32_t *mem;
+	
+  memTotal = malloc(sizeof(char)*15);
+  memFree = malloc(sizeof(char)*15);
+  buffers = malloc(sizeof(char)*15);
+  cached = malloc(sizeof(char)*15);
+
+  mem = malloc(sizeof(u_int32_int)*15);
 
 	
   for(i=0; i<10; i++){
@@ -206,7 +213,7 @@ void testTool() {
     printf("%d KB\n", mem[i]);
 	}
 
-  u_int32_t predicted_value;
+	u_int32_t predicted_value;
 	float c, m;
 	int ret_val;
 	ret_val = ndpi_predict_linear(mem, 10, 6, &predicted_value, &c, &m);
@@ -218,6 +225,12 @@ void testTool() {
 	printf("The y-intercept is: %f\n", c);
 	printf("The slope is: %f\n", m);
 	printf("The predicted value is: %d\n", predicted_value);
+	
+	free(memTotal);
+	free(memFree);
+	free(buffers);
+	free(cached);
+	free(mem);
 }
 
 int main(int argc, char *argv[]){
