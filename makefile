@@ -1,6 +1,6 @@
 CC=gcc
 CFLAGS=-g -Wall -O -std=c99
-LDLIBS=-lm -lrt -pthread
+LDLIBS=-lm -lrt
 
 EXEC=main.out tool.out
 
