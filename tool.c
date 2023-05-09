@@ -197,7 +197,7 @@ void testTool() {
     pclose(fp);
     mem[i] = atoi(memTotal) - atoi(memFree) - atoi(buffers) - atoi(cached);
 
-    //sleep(10);
+    sleep(10);
   }
 		
   for(i=0; i<10; i++){
