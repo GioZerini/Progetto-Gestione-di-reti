@@ -182,7 +182,7 @@ void testTool() {
   buffers = malloc(sizeof(char)*15);
   cached = malloc(sizeof(char)*15);
 
-  mem = malloc(sizeof(u_int32_int)*15);
+  mem = malloc(sizeof(u_int32_t)*15);
 
 	
   for(i=0; i<10; i++){
