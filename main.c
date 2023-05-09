@@ -46,8 +46,8 @@ int ndpi_predict_linear(u_int32_t *values, u_int32_t num_values, u_int32_t predi
   
 	/* Add values */
 	for(i=0; i<num_values; i++){
-    	ndpi_data_add_value(&a, i);
-    	ndpi_data_add_value(&b, values[i]);
+    		ndpi_data_add_value(&a, i);
+    		ndpi_data_add_value(&b, values[i]);
 		ndpi_data_add_value(&d, i * values[i]);
 	}
 
