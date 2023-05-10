@@ -87,7 +87,7 @@ void testTool() {
 	}
 
 	for(i=0; i<10; i++){
-		printf("%d KB\n", mem[i]);
+		printf("Istant: %d, Busy memory: %d KB\n", i, mem[i]);
 	}
 
 	u_int32_t predicted_value;
