@@ -44,7 +44,7 @@ int ndpi_predict_linear(u_int32_t *values, u_int32_t num_values, u_int32_t predi
 		return -1;
 	}
 
-	r		= covariance / (stddevX * stddevY);
+	r	= covariance / (stddevX * stddevY);
 	beta	= r * (stddevY / stddevX);
 	alpha	= meanY - (beta * meanX);
 
