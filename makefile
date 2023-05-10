@@ -2,7 +2,7 @@ CC=gcc
 CFLAGS=-g -Wall -O -std=c99
 LDLIBS=-lm -lrt
 
-EXEC=main.out tool.out
+EXEC=main.out tool.out toolDisk.out
 
 all: $(EXEC)
 
