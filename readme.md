@@ -35,6 +35,6 @@ I casi in cui l'algoritmo può fallire sono principalmente due:
 - deviazione standard dei dati uguale a 0: questo non permette di calcolare i parametri della retta di regressione, e di conseguenza di fare la predizione. Un esempio che porta a questa situazione è il caso in cui tutti i dati della serie temporale sono uguali fra loro.
 
 ## Funzione di test
-
+Abbiamo sviluppato una funzione di test da inserire all'interno del file ndpiReader.c, per testare il corretto funzionamento di ndpi_predict_linear. La nostra funzione di test definisce un'array di 10 valori e predice il valore dell'eventuale quindicesimo punto dell'array. Se il calcolo va a buon fine stampa il valore predetto ed i parametri della retta di regressione, altrimenti un messaggio di errore.
 
 ## Tool
