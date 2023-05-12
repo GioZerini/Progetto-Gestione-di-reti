@@ -25,9 +25,6 @@ La funzione restituisce 0 se il calcolo va a buon fine, altrimenti -1.
 Per predirre il valore abbiamo usato la regressione lineare semplice, quindi abbiamo calcolato i parametri della retta di regressione relativa alla serie temporale rappresentata dall'array values. Per calcolare questi parametri abbiamo dovuto calcolare le medie dei valori lungo l'asse x (il tempo, rappresentato sagli indici dei valori dell'array) e lungo l'asse y (i valori dell'array values). Per questi valori abbiamo inoltre calcolato la rispettiva deviazione standard e la loro covarianza.
 
 A questo punto si possono calcolare i parametri alfa e beta, che nel protipo della funzione si chiamano rispettivamente c e m. Le formule sono le seguenti:
-``` math
- \left( \sum_{k=1}^n a_k bk \right)^2 \leq \left( \sum{k=1}^n ak^2 \right) \left( \sum{k=1}^n b_k^2 \right)
-```
 $$\alpha = \overline{y} - \left( \beta \overline{x} \right)$$ 
 $$\beta = r_{xy} \frac {s_{y}} {s_{x}}$$
 Una volta calcolati i parametri si può predirre il valore utilizzando la retta di regressione per calcolare la y del punto che ha come x l'espressione: predict_period + num_values - 1
