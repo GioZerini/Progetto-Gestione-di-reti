@@ -18,12 +18,12 @@ void predictLinearUnitTest(){
 	ret_val = ndpi_predict_linear(values, 10, 5, &predicted_value, &c, &m);
 	if(ret_val == 0){
 		printf("Computation OK\n");
+		printf("The y-intercept is: %f\n", c);
+		printf("The slope is: %f\n", m);
+		printf("The predicted value is: %d\n", predicted_value);
 	}else{
 		printf("Error in computation\n");
 	}
-	printf("The y-intercept is: %f\n", c);
-	printf("The slope is: %f\n", m);
-	printf("The predicted value is: %d\n", predicted_value);
 }
 
 int main(int argc, char *argv[]) {
