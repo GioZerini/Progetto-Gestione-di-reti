@@ -8,7 +8,7 @@
 #include <math.h>
 #include <sys/statvfs.h>
 #include <unistd.h>
-#include "ndpi_api.h"
+#include "./nDPI/src/include/ndpi_api.h"
 
 int ndpi_predict_linear(u_int32_t *values, u_int32_t num_values, u_int32_t predict_period, u_int32_t *predicted_value, float *c, float *m){
 
