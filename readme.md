@@ -29,7 +29,7 @@ A questo punto si possono calcolare i parametri alfa e beta, che nel protipo del
  \left( \sum_{k=1}^n a_k bk \right)^2 \leq \left( \sum{k=1}^n ak^2 \right) \left( \sum{k=1}^n b_k^2 \right)
 ```
 $$\alpha = \overline{y} - \left( \beta \overline{x} \right)$$ 
-$$\beta = \frac { \sum_{i=1}^n \left( x_{i} - \overline{x} \right) \left( y_{i} - \overline{y} \right)}{ \sum_{i=1}^n \left( x_{i} - \overline{x} \right)^2}$$
+$$\beta = r_{xy} \frac {s_{y}} {s_{x}}$$
 Una volta calcolati i parametri si può predirre il valore utilizzando la retta di regressione per calcolare la y del punto che ha come x l'espressione: predict_period + num_values - 1
 
 ### Casi limite
