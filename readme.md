@@ -38,3 +38,6 @@ I casi in cui l'algoritmo può fallire sono principalmente due:
 Abbiamo sviluppato una funzione di test da inserire all'interno del file ndpiReader.c, per testare il corretto funzionamento di ndpi_predict_linear. La nostra funzione di test definisce un'array di 10 valori e predice il valore dell'eventuale quindicesimo punto dell'array. Se il calcolo va a buon fine stampa il valore predetto ed i parametri della retta di regressione, altrimenti un messaggio di errore.
 
 ## Tool
+Per verificare ulteriormente il funzionamento del progetto abbiamo realizzato due tool che permettono di predirre l'uso del disco/memoria. I tool sono realizzati con la stessa struttura, cioè vengono raccolti 10 dati di utilizzo del disco/memoria a intervalli regolari di 10 secondi, in modo da avere una serie temporale da usare per la predizione. Dopodichè usando la ndpi_predict_linear prediciamo l'utilizzo del disco/memoria tra 1 minuto.
+
+Per quanto riguarda il tool che predice l'utilizzo del disco è possibile che si verifichi il caso in cui tutti i valori della serie sono uguali, dato che l'utilizzo del disco difficilmente cambia in tempo ravvicinato, quindi si potrebbe verificare il caso limite in cui la deviazione standard dei dati è uguale a 0
