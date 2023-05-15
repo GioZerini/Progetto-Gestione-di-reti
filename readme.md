@@ -40,8 +40,12 @@ Per compilare correttamente il programma è necessario accertarsi di avere git i
  cd <Path to Progetto-Gestione-di-reti>
  git clone https://github.com/ntop/nDPI.git
 ```
-Dopodiché sarà necessario eseguire ``` c cd nDPI ``` ed eseguire la compilazione della libreria seguendo la guida presente nel [file](https://github.com/ntop/nDPI/blob/bfe79243bc46a9d5357e72ed30e9d84fb3069530/README.md).
-Successivamente basterà 
+Dopodiché sarà necessario eseguire ``` cd nDPI ``` e seguire la fase di compilazione della libreria presente nella guida di [ntop](https://github.com/ntop/nDPI/blob/bfe79243bc46a9d5357e72ed30e9d84fb3069530/README.md).
+Dopo basterà eseguire  ``` cd .. ``` e nuovamente ``` make ``` per ottenere i file eseguibili, digitando:
+- ``` ./main.out ``` si potrà eseguire la funzione di testing del programma;
+- ``` ./tool.out ``` si potrà eseguire la funzione di tool per la memoria;
+- ``` ./toolDisk.out ``` si potrà eseguire la funzione di tool per il disco.
+
 
 ## Funzione di test
 Abbiamo sviluppato una funzione di test da inserire all'interno del file ndpiReader.c, per testare il corretto funzionamento di ndpi_predict_linear. La nostra funzione di test definisce un'array di 10 valori e predice il valore dell'eventuale quindicesimo punto dell'array. Se il calcolo va a buon fine stampa il valore predetto ed i parametri della retta di regressione, altrimenti un messaggio di errore.
