@@ -64,6 +64,7 @@ void testToolDisco() {
 	char *filename = "toolDisk.c";
 	unsigned long disk_size, used, free;
 	struct statvfs buf;
+	printf("Collecting data every 10 seconds...\n");
 	for(int i = 0; i < 10; i++){
 		if (!statvfs(filename, &buf)) {
 			disk_size = buf.f_blocks * buf.f_bsize;
