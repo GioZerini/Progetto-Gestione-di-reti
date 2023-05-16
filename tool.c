@@ -82,12 +82,9 @@ void testTool() {
 			return;
 		pclose(fp);
 		mem[i] = atoi(memTotal) - atoi(memFree) - atoi(buffers) - atoi(cached);
-
-		sleep(10);
-	}
-
-	for(i=0; i<10; i++){
+		
 		printf("Istant: %d, Busy memory: %d KB\n", i, mem[i]);
+		sleep(10);
 	}
 
 	u_int32_t predicted_value;
