@@ -35,7 +35,7 @@ I casi in cui l'algoritmo può fallire sono principalmente due:
 - deviazione standard dei dati uguale a 0: questo non permette di calcolare i parametri della retta di regressione, e di conseguenza di fare la predizione. Un esempio che porta a questa situazione è il caso in cui tutti i dati della serie temporale sono uguali fra loro.
 
 ## Fase di compilazione
-Su Ubuntu/Debia:
+Su Ubuntu/Debian:
 Per compilare correttamente il programma è necessario accertarsi di avere git installato sulla propria macchina e successivamente effettuare le seguenti operazioni da linea di comando:
 ``` c
  cd <Path to Progetto-Gestione-di-reti>
