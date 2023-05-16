@@ -74,11 +74,10 @@ void testToolDisco() {
 			printf("Couldn't get file system statistics\n");
 			exit(1);
 		}
+		printf("Istant: %d, Busy disk: %d KB\n", i, mem[i]);
 		sleep(10);
 	}
-
-	for(int i = 0; i < 10; i++)
-		printf("Istant: %d, Busy disk: %d KB\n", i, mem[i]);
+		
 
 	u_int32_t predicted_value;
 	float c, m;
