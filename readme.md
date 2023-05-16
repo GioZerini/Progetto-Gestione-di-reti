@@ -36,7 +36,7 @@ I casi in cui l'algoritmo può fallire sono principalmente due:
 
 ## Fase di compilazione
 Su Ubuntu/Debian:
-Per compilare correttamente il programma è necessario accertarsi di avere git installato sulla propria macchina e successivamente effettuare le seguenti operazioni da linea di comando:
+per compilare correttamente il programma è necessario accertarsi di avere git installato sulla propria macchina e successivamente effettuare le seguenti operazioni da linea di comando:
 ``` c
  cd <Path to Progetto-Gestione-di-reti>
  git clone https://github.com/ntop/nDPI.git
