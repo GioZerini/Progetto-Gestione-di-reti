@@ -63,7 +63,7 @@ void testTool() {
 	char memTotal[15], memFree[15], buffers[15], cached[15];
 	u_int32_t mem[10];
 
-
+	printf("Collecting data every 10 seconds...\n");
 	for(i=0; i<10; i++){
 		fp = popen("grep MemTotal /proc/meminfo | awk '{print $2}'", "r");
 		if(fgets(memTotal, sizeof(memTotal), fp) == NULL)
